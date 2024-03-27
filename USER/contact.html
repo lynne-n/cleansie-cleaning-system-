@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>INQUIRE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        body {
+            
+            background-size: cover;
+            font-size: 14px;
+            font-family: 'Poppins', sans-serif;
+            background-color: lightskyblue;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            margin: 50px auto;
+            text-align: center;
+            background-color: lightskyblue;
+        }
+        .contact-right {
+            flex-basis: 40%;
+            padding: 30px;
+            background: none;
+            color: black;
+            border: solid aqua;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 50px;
+            margin-bottom: 100px;
+        }
+        .contact-left{
+            border: solid aqua;
+            margin-right: 20px;
+            margin-left: 20px;
+           
+        }
+        .contact-right h3{
+            color: aqua;
+        }
+        .contact-box {
+            background: transparent;
+            display: flex;
+            padding-left: 5px;           
+        }
+        h1 {
+            margin-bottom: 10px;
+            color: aqua;
+            text-align: center;
+        }
+        .contact-left h3{
+            color: aqua;
+            font-size: 20px;
+        }
+        label{
+            color: black;
+            font-size: 16px;
+        }
+        button{
+            background-color: aqua;
+        }
+        button:hover{
+            background-color: yellow;
+        }
+
+    </style>
+    <div class="container">
+        <h1>Talk To Us</h1>
+        <p>We would love to respond to your inquiries and help you succeed. Feel free to get in touch with us.</p>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>Send your inquiries</h3>
+                <form action="process_contact.php" method="POST">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                    </div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+                    <button type="submit">SEND</button>
+                </form>
+            </div>
+            <div class="contact-right">
+                <h3>Get In Touch With Us</h3>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>cleansie@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>0112345249</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
